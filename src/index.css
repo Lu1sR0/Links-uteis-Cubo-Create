@@ -1,0 +1,65 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --primary: 199 89% 57%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 0%;
+    --secondary-foreground: 199 89% 57%;
+    --muted: 199 89% 57%;
+    --muted-foreground: 0 0% 0%;
+    --accent: 199 89% 57%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 199 89% 57%;
+    --input: 199 89% 57%;
+    --ring: 199 89% 57%;
+    --radius: 1rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-white text-black antialiased font-sans;
+  }
+}
+
+.glass-card {
+  @apply bg-white/95 shadow-xl border border-white/20 backdrop-blur-sm;
+}
+
+.hover-scale {
+  @apply transition-all duration-500 hover:scale-105 hover:shadow-2xl;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, #e5e7eb 1px, transparent 1px),
+    linear-gradient(to bottom, #e5e7eb 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

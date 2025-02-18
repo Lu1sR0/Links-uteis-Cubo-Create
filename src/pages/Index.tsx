@@ -5,6 +5,12 @@ import CategoryCard from "../components/CategoryCard";
 
 const categories = [
   {
+    title: "Orçamento",
+    description: "Entre em contato para fazer um orçamento",
+    icon: DollarSign,
+    path: "/orcamento",
+  },
+  {
     title: "Design",
     description: "Explore nossa galeria de designs e projetos",
     icon: Paintbrush,
@@ -17,12 +23,7 @@ const categories = [
     path: "https://lrportifolio.vercel.app",
     external: true,
   },
-  {
-    title: "Orçamento",
-    description: "Entre em contato para fazer um orçamento",
-    icon: DollarSign,
-    path: "/orcamento",
-  },
+
 ];
 
 const Index = () => {

@@ -3,14 +3,13 @@ import { useEffect } from "react";
 
 const Budget = () => {
   useEffect(() => {
-    const message = encodeURIComponent("quero fazer um orçamento com vocês");
-    window.location.href = `https://wa.me/5516991509041?text=${message}`;
+    window.location.href = "https://www.instagram.com/gestor.bielrds?igsh=MnBjdzVpd2M3ejlp";
   }, []);
 
   return (
     <div className="min-h-screen flex items-center justify-center p-6">
       <div className="text-center">
-        <p className="text-lg text-primary">Redirecionando para o WhatsApp...</p>
+        <p className="text-lg text-primary">Redirecionando para o Instagram...</p>
       </div>
     </div>
   );

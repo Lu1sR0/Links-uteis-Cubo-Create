@@ -16,13 +16,6 @@ const categories = [
     icon: Paintbrush,
     path: "/design",
   },
-  {
-    title: "Desenvolvimento Web",
-    description: "Confira nosso portfólio de desenvolvimento",
-    icon: Code,
-    path: "https://lrportifolio.vercel.app",
-    external: true,
-  },
 
 ];
 
